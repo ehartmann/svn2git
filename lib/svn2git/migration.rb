@@ -157,7 +157,7 @@ module Svn2Git
         if nominimizeurl
           cmd += "--no-minimize-url "
         end
-        cmd += "--trunk=#{@url}"
+        cmd += "--trunk=#{@url} #{@url}"
         run_command(cmd)
 
       else
